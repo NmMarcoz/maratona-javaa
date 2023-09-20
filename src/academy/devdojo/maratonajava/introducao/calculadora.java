@@ -14,7 +14,7 @@ public class calculadora {
 
         int escolha = visualizador.nextInt();
 
-        Boolean escolha_valida = true;
+        boolean escolha_valida = true;
 
         if (escolha != 1 && escolha != 2 && escolha != 3 &&  escolha !=4){
             escolha_valida = false;
