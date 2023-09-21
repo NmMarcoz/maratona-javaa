@@ -9,4 +9,3 @@ public class ternario {
         System.out.println(resultado);
     }
 }
- 
