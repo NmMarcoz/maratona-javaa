@@ -42,6 +42,6 @@ public class switchexample {
             default:
                 System.out.println("inválido!");
         }
-        
+
     }
 }
