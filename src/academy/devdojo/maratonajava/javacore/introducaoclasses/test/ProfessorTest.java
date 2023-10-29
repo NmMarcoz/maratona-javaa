@@ -10,6 +10,6 @@ public class ProfessorTest {
         professor01.idade = 25;
         professor01.sexo = 'M';
 
-        professor01.Console();
+        professor01.console();
     }
 }

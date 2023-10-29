@@ -6,7 +6,7 @@ public class Professor {
     public int idade;
     public char sexo;
 
-    public void Console(){
+    public void console(){
         System.out.println("Nome do professor é: " + this.nome);
         System.out.println("Idade do professor é: " + this.idade);
         System.out.println("Matéria do professor é: " + this.materia);
