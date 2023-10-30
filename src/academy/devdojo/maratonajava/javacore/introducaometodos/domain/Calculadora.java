@@ -34,6 +34,13 @@ public class Calculadora {
         System.out.println("Soma da array é: " + soma);
     }
 
+    public void somaVarArgs(int... numeros){
+        int soma = 0;
+        for(int temp: numeros){
+            soma = soma + temp;
+        }
+        System.out.println("Soma da array (VarArgs) é: " + soma);
 
+    }
 
 }

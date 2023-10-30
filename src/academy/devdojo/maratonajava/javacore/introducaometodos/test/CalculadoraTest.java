@@ -12,6 +12,8 @@ public class CalculadoraTest {
         calc.multiplicacao(15, 28);
         calc.somaArray(nums);
         System.out.println(calc.isPar(15));
+        System.out.println("_____________________");
+        calc.somaVarArgs(1,2,34,54,65,67,7);
     }
 
 }
