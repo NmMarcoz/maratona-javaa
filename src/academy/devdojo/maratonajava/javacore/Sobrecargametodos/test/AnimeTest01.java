@@ -27,5 +27,4 @@ public class AnimeTest01 {
         anime03.init("Boku no hero", "Ação", "Shounen", 1085, "Muito boa!");
         anime03.console();
     }
-
 }
