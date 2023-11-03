@@ -1,9 +1,23 @@
 package academy.devdojo.maratonajava.javacore.introducaometodos.domain;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salario;
+    private String nome;
+    private int idade;
+    private double[] salario;
+
+    private double media;
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+
+    public void setSalario(double... salario){
+        this.salario = salario;
+    } //Var args utilizado aqui <---------------------
 
     public void console(){
         System.out.println("Nome do funcionário é: " + this.nome);
@@ -18,14 +32,26 @@ public class Funcionario {
 
     public void media(){
         double soma = 0;
-        double  media = 0;
         if(salario != null){
             for (double temp: salario){
                 soma = temp;
             }
             media = soma / salario.length;
-            System.out.println("Média dos salários é: " + media);
+            System.out.println("Média dos salários é: " +getMedia());
         }
 
+    }
+
+    public double getMedia(){
+        media = Math.round(media);
+        return this.media;
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    public int getIdade(){
+        return this.idade;
     }
 }
