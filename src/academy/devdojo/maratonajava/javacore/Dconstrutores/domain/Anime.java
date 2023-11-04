@@ -8,12 +8,23 @@ public class Anime {
     private String gender;
     private String relevance;
 
-    public Anime(String name){
+    private String estudio;
+
+    public Anime(String name, String type, int episodes, String gender, String relevance){
         System.out.println("Dentro do construtor");
         this.name = name;
-        System.out.println("Nome no construtor é: "+ this.name);
-        System.out.println("Fora do construtor");
+        this.type = type;
+        this.episodes = episodes;
+        this.gender = gender;
+        this.relevance = relevance;
     }
+
+    public Anime( String name, String type, int episodes, String gender, String relevance, String estudio){
+        this(name, type, episodes, gender, relevance);
+        this.estudio = estudio;
+    }
+
+
 
     public void init(String name, String type, String gender, int episodes) {
         this.name = name;
@@ -33,6 +44,9 @@ public class Anime {
         System.out.println("Gênero do anime é: " + this.gender);
         if (this.relevance != null) {
             System.out.println("Relevância do anime é: " + this.relevance);
+        }
+        if(this.estudio != null){
+            System.out.println("Estúdio do anime: " + this.estudio);
         }
         System.out.println("O anime possui " + this.episodes + " episódios");
 
