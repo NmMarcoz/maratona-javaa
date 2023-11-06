@@ -3,8 +3,6 @@ package academy.devdojo.maratonajava.javacore.Gassociacao.test;
 import academy.devdojo.maratonajava.javacore.Gassociacao.domain.Jogador;
 
 public class JogadorTest01 {
-
-
     public static void main(String[] args) {
         Jogador jogador01 = new Jogador("Robinho");
         Jogador jogador02 = new Jogador("Neymar");
@@ -17,10 +15,6 @@ public class JogadorTest01 {
         System.out.println("-------------------------");
         for (int i = 0; i < jogadores.length; i++) {
             jogadores[i].console();
-
         }
-
     }
-
-
 }
