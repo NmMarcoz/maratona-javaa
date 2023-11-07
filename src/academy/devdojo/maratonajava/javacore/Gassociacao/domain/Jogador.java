@@ -10,6 +10,10 @@ public class Jogador {
         this.name = nome;
     }
 
+    public Jogador(String name, Time time){
+        this.name = name;
+        this.time = time;
+    }
     public void console(){
         System.out.println("Nome do jogador: " + this.name);
         if(time != null){
