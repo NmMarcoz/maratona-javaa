@@ -4,12 +4,11 @@ public class Funcionario extends Pessoa {
     private int salario;
 
     public Funcionario(String name, String cpf, int salario){
-        setCpf(cpf);
-        setName(name);
+        super(name, cpf);
         this.salario = salario;
     }
 
-    public void relatorioPagament(){
+    public void relatorioPagamento(){
         System.out.println("Eu "+ this.name +"recebi o salario de: "+ this.salario);
     }
 

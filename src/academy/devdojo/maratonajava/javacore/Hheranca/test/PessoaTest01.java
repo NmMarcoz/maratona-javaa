@@ -17,5 +17,6 @@ public class PessoaTest01 {
         pessoa1.console();
         System.out.println("-----------------");
         funcionario1.console();
+        funcionario1.relatorioPagamento();
     }
 }

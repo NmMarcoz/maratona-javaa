@@ -12,6 +12,11 @@ public class Pessoa {
      public Pessoa(String name){
          this.name = name;
      }
+
+     public Pessoa(String name, String cpf){
+         this(name);
+         this.cpf = cpf;
+     }
      public Pessoa(String name, String cpf, Endereco endereco){
          this.name = name;
          this.cpf = cpf;
