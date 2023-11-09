@@ -1,8 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.domain;
 
 public class Pessoa {
-     private String name;
-     private String cpf;
+     protected String name;//Agora todas classes do pacote e subclasses extendidas tem acesso a este atributo como se fosse público!
+     protected String cpf;
      private Endereco endereco;
 
 
