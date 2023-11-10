@@ -10,6 +10,10 @@ public class Carro {
     static{
         VELOCIDADE_LIMITE = 250;
     }
+    public final void console(){
+        System.out.println("Nome do carro: "+this.name);
+        System.out.println("Ano do carro: "+ this.ano);
+    }
     public double getVelocidadeLimite(){
         return VELOCIDADE_LIMITE;
     }
