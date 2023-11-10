@@ -5,9 +5,6 @@ public class Cliente {
     private String tipo;
     private TipoClient tipoClient;
 
-    public enum TipoPagamento{
-        DEBITO, CREDITO
-    }
 
     private TipoPagamento tipoPagamento;
 
@@ -25,10 +22,14 @@ public class Cliente {
         System.out.println("Tipo do cliente: " +this.tipoClient);
         if(tipoPagamento != null){
             System.out.println("Tipo de pagamento: "+this.tipoPagamento);
+            System.out.println("Desconto do cliente: "+ tipoPagamento.calcularDesconto(100));
         }else{
             System.out.println("Tipo de pagamento não informado!");
         }
         System.out.println("Tipo do cliente: "+ tipoClient.getValor());
+        System.out.println("Valor do pagamento: R$" + 100);
+
+
 
     }
 
