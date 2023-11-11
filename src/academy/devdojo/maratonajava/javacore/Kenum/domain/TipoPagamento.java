@@ -7,7 +7,7 @@ public enum TipoPagamento{
             }
         }, CREDITO{
             public double calcularDesconto(double valor){
-                return valor * 0.15;
+                return valor * 0.05;
             }
     };
 

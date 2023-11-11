@@ -5,6 +5,8 @@ public enum TipoClient {
     PESSOA_JURIDICA(2);
 
     private int  valor;
+
+
     TipoClient(int valor){
         this.valor = valor;
     }
