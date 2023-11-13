@@ -13,14 +13,12 @@ public class CalculadoraImposto {
         System.out.println("Valor: "+ produto.getPrice());
         System.out.println("Imposto a ser pago: "+ imposto);
         if(produto instanceof Tomate){ //Estamos verificando se o "super" objeto que passamos é uma instância de uma de suas heranças! Neste caso: Tomate
-            Tomate tomate = (Tomate) produto;
+            Tomate tomate = (Tomate) produto; //Casting de Produto para Tomate
             System.out.println("Data de validaded: " + tomate.getDataDeValdiade());
             System.out.println("Não é um computador!");
         }
         if(produto instanceof Computador){
             System.out.println("É um computador!");
         }
-
-
     }
 }
