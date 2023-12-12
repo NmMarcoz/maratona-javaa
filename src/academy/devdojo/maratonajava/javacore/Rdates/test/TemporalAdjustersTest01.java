@@ -23,9 +23,7 @@ public class TemporalAdjustersTest01 {
         Dias dia = new Dias();
         System.out.println("Exercício");
         System.out.println("-----------------------------------------");
-        System.out.println(LocalDateTime.now().plusDays(4).getDayOfWeek());
+        System.out.println(LocalDateTime.now().plusDays(4).getDayOfWeek()); ///////////////////
         dia.proximoDiaUtil(LocalDateTime.now().plusDays(4));
     }
-
-
 }
