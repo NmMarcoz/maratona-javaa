@@ -35,5 +35,5 @@ public class SerializationTest01 {
         }catch (IOException | ClassNotFoundException exception){
             System.out.println(exception.getMessage());
         }
-    }
+    } // PAPABUM
 }
