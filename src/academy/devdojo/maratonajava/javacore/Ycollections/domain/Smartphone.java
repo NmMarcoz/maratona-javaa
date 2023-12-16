@@ -16,6 +16,10 @@ public class Smartphone {
     public String getMarca() {
         return marca;
     }
+    public void console(){
+        System.out.println("Serial number: " + this.serialNumber);
+        System.out.println("Marca: " + this.marca);
+    }
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
